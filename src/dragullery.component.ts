@@ -69,6 +69,8 @@ export class DragulleryComponent {
   }
 
   ngOnInit() {
+    console.log('wrapperStyle', this.wrapperStyle);
+    console.log('wrapperStyle', this.imageStyle);
     this.dragulaService.setOptions("bag-one", {direction: 'horizontal'});
 
     this.dragulaService.drop.subscribe((items: any[]) => {
@@ -128,7 +130,6 @@ export class DragulleryComponent {
     if (this.sortedMap.hasOwnProperty(uid) && (this.sortedMap[uid] !== null) && (typeof this.sortedList[this.sortedMap[uid]] !== 'undefined') && this.sortedList[this.sortedMap[uid]]) {
       result = this.sortedList[this.sortedMap[uid]];
     }
-
     return result;
   }
 

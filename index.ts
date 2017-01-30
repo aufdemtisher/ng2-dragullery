@@ -6,6 +6,8 @@ import {DragulleryPipe} from "./src/dragullery.pipe";
 import {DragulleryService} from "./src/dragullery.service";
 import {DragulaModule} from "ng2-dragula";
 import {MdGridListModule} from "@angular/material";
+import { MaterialModule } from '@angular/material';
+
 
 export * from './src/dragullery.component';
 export * from './src/dragullery.directive';
@@ -16,7 +18,8 @@ export * from './src/dragullery.service';
   imports: [
     CommonModule,
     DragulaModule,
-    MdGridListModule
+    MdGridListModule,
+    MaterialModule.forRoot()
   ],
   declarations: [
     DragulleryComponent,
