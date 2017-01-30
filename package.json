@@ -1,0 +1,109 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "git+https://github.com/kitolog/ng2-dragullery.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "git+https://github.com/kitolog/ng2-dragullery.git",
+        "spec": "git+https://github.com/kitolog/ng2-dragullery.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:kitolog/ng2-dragullery.git",
+          "sshUrl": "git+ssh://git@github.com/kitolog/ng2-dragullery.git",
+          "httpsUrl": "git+https://github.com/kitolog/ng2-dragullery.git",
+          "gitUrl": "git://github.com/kitolog/ng2-dragullery.git",
+          "shortcut": "github:kitolog/ng2-dragullery",
+          "directUrl": "https://raw.githubusercontent.com/kitolog/ng2-dragullery/master/package.json"
+        }
+      },
+      "D:\\ng2"
+    ]
+  ],
+  "_from": "git+https://github.com/kitolog/ng2-dragullery.git",
+  "_id": "ng2-dragullery@0.1.4",
+  "_inCache": true,
+  "_location": "/ng2-dragullery",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "git+https://github.com/kitolog/ng2-dragullery.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "git+https://github.com/kitolog/ng2-dragullery.git",
+    "spec": "git+https://github.com/kitolog/ng2-dragullery.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:kitolog/ng2-dragullery.git",
+      "sshUrl": "git+ssh://git@github.com/kitolog/ng2-dragullery.git",
+      "httpsUrl": "git+https://github.com/kitolog/ng2-dragullery.git",
+      "gitUrl": "git://github.com/kitolog/ng2-dragullery.git",
+      "shortcut": "github:kitolog/ng2-dragullery",
+      "directUrl": "https://raw.githubusercontent.com/kitolog/ng2-dragullery/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/kitolog/ng2-dragullery.git#39000005752f733c447e8db5e394bf3f6ebd0554",
+  "_shasum": "2568dc2b429d52f332a2b76b1383401c4fa55094",
+  "_shrinkwrap": null,
+  "_spec": "git+https://github.com/kitolog/ng2-dragullery.git",
+  "_where": "D:\\ng2",
+  "author": {
+    "name": "kitolog",
+    "email": "nikita.kosilo@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/kitolog/ng2-dragullery.git/issues"
+  },
+  "dependencies": {
+    "@angular/material": "^2.0.0-beta.1",
+    "dragula": "^3.7.2",
+    "ng2-dragula": "^1.3.0"
+  },
+  "description": "To install this library, run:",
+  "devDependencies": {
+    "@angular/common": "^2.0.0",
+    "@angular/core": "^2.0.0",
+    "@types/es6-shim": "^0.31.32",
+    "@types/jasmine": "^2.5.40",
+    "@types/protractor": "^4.0.0",
+    "@types/selenium-webdriver": "^2.53.39",
+    "codelyzer": "^0.0.28",
+    "rxjs": "^5.0.1",
+    "tslint": "^3.15.1",
+    "typescript": "2.0.2",
+    "zone.js": "0.7.2"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "gitHead": "39000005752f733c447e8db5e394bf3f6ebd0554",
+  "homepage": "https://github.com/kitolog/ng2-dragullery#readme",
+  "keywords": [
+    "angular",
+    "angular2"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "name": "ng2-dragullery",
+  "optionalDependencies": {},
+  "readme": "# angular2-dragullery\r\n\r\n## Installation\r\n\r\nTo install this library, run:\r\n\r\n```bash\r\n$ npm install https://github.com/kitolog/ng2-dragullery.git --save\r\n```\r\n\r\nand then from your Angular `AppModule`:\r\n\r\n```typescript\r\nimport { BrowserModule } from '@angular/platform-browser';\r\nimport { NgModule } from '@angular/core';\r\n\r\nimport { AppComponent } from './app.component';\r\n\r\n// Import your library\r\nimport { DragulleryModule } from 'ng2-dragullery';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n\r\n    // Specify your library as an import\r\n    DragulleryModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n```\r\n\r\nOnce your library is imported, you can use its components, directives and pipes in your Angular application:\r\n\r\n```typescript\r\nthis.imagesList = [\r\n      {\r\n        Url: 'url-to-image',\r\n        Description: 'Description',\r\n        Position: 1\r\n      }\r\n    ]\r\n```\r\n\r\n```xml\r\n<!-- You can now use your library component in app.component.html -->\r\n<dragullery [imagesList]=\"imagesList\"></dragullery>\r\nOR\r\n<dragullery [imagesList]=\"imagesList\" [imageStyle]=\"{'max-height':'50px'}\"></dragullery>\r\n```\r\n\r\n## API\r\n - ```[imagesList]``` an array of Image models (Url,Description,Position)\r\n - ```[imageStyle]``` styles for image\r\n - ```[wrapperStyle]``` styles for image wrapper\r\n - ```[galleryStyle]``` styles for gallery container\r\n## Development\r\n\r\nTo generate all `*.js`, `*.js.map` and `*.d.ts` files:\r\n\r\n```bash\r\n$ npm run tsc\r\n```\r\n\r\nTo lint all `*.ts` files:\r\n\r\n```bash\r\n$ npm run lint\r\n```\r\n\r\n## License\r\n\r\nMIT © [kitolog](mailto:nikita.kosilo@gmail.com)\r\n",
+  "readmeFilename": "README.MD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kitolog/ng2-dragullery.git"
+  },
+  "scripts": {
+    "lint": "tslint src/**/*.ts",
+    "prepublish": "tsc",
+    "test": "tsc && karma start",
+    "tsc": "tsc"
+  },
+  "version": "0.1.4"
+}
